@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الذكاء الاصطناعي التوليدي وتطبيقاته في الوسائط المتعددة</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header>
+    <div id="logo-placeholder">
+        <img id="logo" src="images/Gen_Media__4_-removebg-preview.png" alt="شعار الموقع" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#intro">مقدمة</a></li>
+        <li><a href="#tools">الأدوات</a></li>
+        <li><a href="#diagrams">أشكال توضيحية</a></li>
+        <li><a href="#media">الوسائط</a></li>
+        <li><a href="#ai-text">نصوص الذكاء الاصطناعي</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="intro">
+      <h1>الذكاء الاصطناعي التوليدي وتطبيقاته في نظم الوسائط المتعددة</h1>
+      <article>
+        <h2>ما هو الذكاء الاصطناعي التوليدي؟</h2>
+        <p>
+          الذكاء الاصطناعي التوليدي (Generative AI) هو فرع من فروع الذكاء الاصطناعي
+          يُعنى بإنشاء محتوى جديد - نصوص، صور، صوت، فيديو - بدلاً من الاكتفاء
+          بتحليل البيانات الموجودة. يعتمد على نماذج تعلم عميق مثل المحولات (Transformers)
+          والشبكات التوليدية التعاكسية (GANs) ونماذج الانتشار (Diffusion Models).
+        </p>
+        <p>
+          في سياق <strong>نظم الوسائط المتعددة</strong>، يُستخدم الذكاء الاصطناعي التوليدي
+          لإنتاج وتحرير وتحويل المحتوى عبر أنماط متعددة: الصور الرقمية، الصوت والموسيقى،
+          ومقاطع الفيديو - مما يُحدث ثورة في صناعات الإبداع والترفيه والتعليم.
+        </p>
+      </article>
+
+      <article>
+        <h2>تطبيقات الذكاء الاصطناعي في الوسائط المتعددة</h2>
+        <ul>
+          <li><i class="bi bi-image"></i> <strong>توليد الصور:</strong> إنشاء صور فوتوغرافية واقعية أو فنية من وصف نصي</li>
+          <li><i class="bi bi-mic"></i> <strong>توليد الصوت:</strong> تركيب أصوات بشرية وموسيقى أصيلة</li>
+          <li><i class="bi bi-camera-reels"></i> <strong>توليد الفيديو:</strong> إنشاء مقاطع فيديو متكاملة أو تحريك صور ثابتة</li>
+          <li><i class="bi bi-file-text"></i> <strong>توليد النصوص:</strong> كتابة محتوى إبداعي وتقني بأنماط متنوعة</li>
+          <li><i class="bi bi-arrow-left-right"></i> <strong>التحويل بين الأنماط:</strong> تحويل النص إلى صوت، والصوت إلى نص، إلخ</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="tools">
+      <h2>أبرز 5 أدوات للذكاء الاصطناعي التوليدي في الوسائط المتعددة</h2>
+      <div id="tools-nav">
+        <button id="btn-midjourney" onclick="showTool('midjourney')">Midjourney</button>
+        <button id="btn-runway" onclick="showTool('runway')">Runway ML</button>
+        <button id="btn-elevenlabs" onclick="showTool('elevenlabs')">ElevenLabs</button>
+        <button id="btn-suno" onclick="showTool('suno')">Suno AI</button>
+        <button id="btn-chatgpt" onclick="showTool('chatgpt')">ChatGPT</button>
+      </div>
+
+      <!-- اداة 1: Midjourney -->
+      <article id="tool-midjourney">
+        <h3>Midjourney - توليد الصور بالذكاء الاصطناعي</h3>
+        <section>
+          <h4>طريقة العمل</h4>
+          <p>
+            تعتمد Midjourney على نماذج الانتشار (Diffusion Models) لتحويل النصوص الوصفية
+            (Prompts) إلى صور فنية عالية الجودة. تعمل عبر روبوت Discord، حيث يدخل
+            المستخدم وصفاً نصياً وتُنتج الأداة 4 خيارات صورة في ثوان. تدعم معاملات
+            متقدمة للتحكم في النسبة والجودة والأسلوب الفني.
+          </p>
+        </section>
+        <section>
+          <h4>الإيجابيات</h4>
+          <ul>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> جودة فنية استثنائية تتفوق على كثير من المنافسين</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> دعم أساليب فنية متنوعة (فوتوغرافي، تشكيلي، رقمي)</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> سرعة عالية في توليد الصور</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> مجتمع نشط وقاعدة بيانات ضخمة من الـ Prompts</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> تحكم دقيق عبر معاملات متقدمة (--ar, --v, --stylize)</li>
+          </ul>
+        </section>
+        <section>
+          <h4>السلبيات</h4>
+          <ul>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> يتطلب حساباً مدفوعاً بعد انتهاء الفترة التجريبية</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> يعمل فقط عبر Discord (لا واجهة ويب مستقلة في الإصدارات الأولى)</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> صعوبة في التحكم الدقيق بتفاصيل معينة (الأيدي، النصوص)</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> قد تنتج محتوى غير متوقع أحياناً</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> لا يتيح تحريراً انتقائياً (Inpainting) بسهولة</li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- اداة 2: Runway ML -->
+      <article id="tool-runway">
+        <h3>Runway ML - توليد الفيديو والتحرير بالذكاء الاصطناعي</h3>
+        <section>
+          <h4>طريقة العمل</h4>
+          <p>
+            Runway ML منصة متكاملة تجمع بين نماذج توليد الفيديو (Gen-2, Gen-3)
+            ومجموعة أدوات تحرير بالذكاء الاصطناعي. تحول النصوص والصور إلى مقاطع
+            فيديو عبر نماذج انتشار متخصصة بالأبعاد الزمنية. تدعم أيضاً إزالة
+            الخلفية، وتتبع الحركة، وتوليد المؤثرات البصرية.
+          </p>
+        </section>
+        <section>
+          <h4>الإيجابيات</h4>
+          <ul>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> توليد فيديو عالي الجودة من نص أو صورة</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> واجهة احترافية سهلة الاستخدام</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> مجموعة ضخمة من أدوات التحرير المدعومة بالذكاء الاصطناعي</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> دعم الدقة العالية والإطارات المتعددة</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> تكامل مع أدوات الإنتاج الاحترافية</li>
+          </ul>
+        </section>
+        <section>
+          <h4>السلبيات</h4>
+          <ul>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> تكلفة مرتفعة للاشتراكات الاحترافية</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> الفيديو المُولَّد محدود المدة (بضع ثوانٍ في الخطط الأساسية)</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> يتطلب اتصالاً سريعاً بالإنترنت</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> قد تكون الحركات غير طبيعية أحياناً</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> القيود على المحتوى قد تُعيق بعض الاستخدامات الإبداعية</li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- اداة 3: ElevenLabs -->
+      <article id="tool-elevenlabs">
+        <h3>ElevenLabs - توليد الصوت والكلام بالذكاء الاصطناعي</h3>
+        <section>
+          <h4>طريقة العمل</h4>
+          <p>
+            تستخدم ElevenLabs نماذج لغوية صوتية (Voice Language Models) لتحويل
+            النص إلى كلام بشري واقعي للغاية. تدعم الاستنساخ الصوتي (Voice Cloning)
+            من عينات صوتية قصيرة، وتوليد مشاعر وتنغيمات متنوعة، والتوليد متعدد
+            اللغات بما فيها العربية.
+          </p>
+        </section>
+        <section>
+          <h4>الإيجابيات</h4>
+          <ul>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> جودة صوتية تضاهي الصوت البشري الحقيقي</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> استنساخ صوتي من عينات قصيرة (بضع دقائق)</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> دعم اللغة العربية وعشرات اللغات الأخرى</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> تحكم في الإيقاع والعواطف ومستوى الصوت</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> API سهل التكامل مع التطبيقات</li>
+          </ul>
+        </section>
+        <section>
+          <h4>السلبيات</h4>
+          <ul>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> مخاوف أخلاقية حول استنساخ الأصوات دون إذن</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> تكلفة عالية عند الاستخدام التجاري المكثف</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> الإصدار المجاني محدود بعدد الحروف شهرياً</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> قد تفشل أحياناً في التلفظ الصحيح بالأسماء الخاصة</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> بعض اللغات أقل دقة من الإنجليزية</li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- اداة 4: Suno AI -->
+      <article id="tool-suno">
+        <h3>Suno AI - توليد الموسيقى والأغاني بالذكاء الاصطناعي</h3>
+        <section>
+          <h4>طريقة العمل</h4>
+          <p>
+            Suno AI تُنتج مقاطع موسيقية متكاملة - بما فيها الكلمات والألحان والأداء
+            الصوتي - من وصف نصي بسيط. تعتمد على نماذج توليد صوتية تدمج بين التشفير
+            الموسيقي وتوليد الكلام. يمكن تحديد النوع الموسيقي (جاز، روك، عربي، إلخ)
+            وأسلوب الأداء ومزاج القطعة.
+          </p>
+        </section>
+        <section>
+          <h4>الإيجابيات</h4>
+          <ul>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> إنتاج أغانٍ كاملة (كلمات + لحن + أداء) في دقيقة واحدة</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> دعم أنواع موسيقية متنوعة بما فيها الموسيقى العربية</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> واجهة بسيطة جداً لا تستلزم خبرة موسيقية</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> مجاني جزئياً مع اشتراكات معقولة التكلفة</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> جودة صوتية عالية في الإصدارات الحديثة</li>
+          </ul>
+        </section>
+        <section>
+          <h4>السلبيات</h4>
+          <ul>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> تحكم محدود في التفاصيل الموسيقية الدقيقة</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> الأغنية المولدة قد تحتوي على كلمات غير مناسبة أحياناً</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> حقوق الملكية قد تكون غير واضحة للاستخدام التجاري</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> الإصدار المجاني محدود بعدد الأغاني يومياً</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> صعوبة تعديل أجزاء محددة من الأغنية دون إعادة التوليد</li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- اداة 5: ChatGPT -->
+      <article id="tool-chatgpt">
+        <h3>ChatGPT (GPT-4o) - توليد النصوص والمحتوى المتعدد الأنماط</h3>
+        <section>
+          <h4>طريقة العمل</h4>
+          <p>
+            ChatGPT يعتمد على نموذج GPT-4o متعدد الأنماط (Multimodal) من OpenAI،
+            الذي يفهم النصوص والصور وينتج ردوداً نصية تفاعلية. في سياق الوسائط،
+            يساعد في كتابة السيناريوهات، وصياغة الـ Prompts لأدوات الصور والفيديو،
+            وتحليل المحتوى البصري، وتوليد أوصاف إبداعية.
+          </p>
+        </section>
+        <section>
+          <h4>الإيجابيات</h4>
+          <ul>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> فهم عميق للسياق ومتعدد اللغات بما فيها العربية</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> يحلل الصور ويصفها ويجيب عن أسئلة متعلقة بها</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> يولد Prompts احترافية لأدوات الصور والفيديو</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> كتابة سيناريوهات ونصوص إبداعية متطورة</li>
+            <li><i class="bi bi-check-lg" style="color: green;"></i> تكامل مع DALL-E لتوليد الصور مباشرة</li>
+          </ul>
+        </section>
+        <section>
+          <h4>السلبيات</h4>
+          <ul>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> لا يولد صوتاً أو فيديو بشكل مباشر (في الإصدار الأساسي)</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> قد ينتج معلومات غير دقيقة (Hallucination)</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> الإصدار المجاني لا يدعم جميع ميزات GPT-4o</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> تكلفة API مرتفعة عند الاستخدام المكثف</li>
+            <li><i class="bi bi-x-lg" style="color: red;"></i> قيود على بعض أنواع المحتوى الإبداعي</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+
+    <section id="diagrams">
+      <h2>أشكال توضيحية</h2>
+
+      <article>
+        <h3>مخطط 1: دورة حياة توليد المحتوى بالذكاء الاصطناعي</h3>
+        <div id="diagram-lifecycle">
+          <div>
+            <span>1</span>
+            <p>المدخلات (Input)</p>
+            <p>نص / صورة / صوت</p>
+          </div>
+          <div>
+            <span><i class="bi bi-arrow-left-right"></i></span>
+          </div>
+          <div>
+            <span>2</span>
+            <p>النموذج (Model)</p>
+            <p>Diffusion / Transformer / GAN</p>
+          </div>
+          <div>
+            <span><i class="bi bi-arrow-left-right"></i></span>
+          </div>
+          <div>
+            <span>3</span>
+            <p>المعالجة (Processing)</p>
+            <p>ترميز - توليد - فك ترميز</p>
+          </div>
+          <div>
+            <span><i class="bi bi-arrow-left-right"></i></span>
+          </div>
+          <div>
+            <span>4</span>
+            <p>المخرجات (Output)</p>
+            <p>صورة / فيديو / صوت / نص</p>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h3>مخطط 2: مقارنة الأدوات حسب نوع الوسائط</h3>
+        <table id="comparison-table" border="1">
+          <thead>
+            <tr>
+              <th>الأداة</th>
+              <th><i class="bi bi-image"></i> الصور</th>
+              <th><i class="bi bi-mic"></i> الصوت</th>
+              <th><i class="bi bi-camera-reels"></i> الفيديو</th>
+              <th><i class="bi bi-file-text"></i> النص</th>
+              <th><i class="bi bi-music-note-beamed"></i> الموسيقى</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Midjourney</td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+            </tr>
+            <tr>
+              <td>Runway ML</td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+            </tr>
+            <tr>
+              <td>ElevenLabs</td>
+              <td><i class="bi bi-dash"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+            </tr>
+            <tr>
+              <td>Suno AI</td>
+              <td><i class="bi bi-dash"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+            </tr>
+            <tr>
+              <td>ChatGPT</td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></td>
+              <td><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></td>
+              <td><i class="bi bi-dash"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h3>مخطط 3: تصنيف نماذج الذكاء الاصطناعي التوليدي</h3>
+        <div id="diagram-models">
+          <div id="model-tree-root">
+            <p><i class="bi bi-cpu"></i> نماذج الذكاء الاصطناعي التوليدي</p>
+          </div>
+          <ul>
+            <li>
+              <strong><i class="bi bi-diagram-3"></i> نماذج الانتشار (Diffusion Models)</strong>
+              <ul>
+                <li>Stable Diffusion</li>
+                <li>DALL-E 3</li>
+                <li>Midjourney</li>
+              </ul>
+            </li>
+            <li>
+              <strong><i class="bi bi-chat-dots"></i> المحولات اللغوية (Transformers)</strong>
+              <ul>
+                <li>GPT-4o</li>
+                <li>Gemini</li>
+                <li>Claude</li>
+              </ul>
+            </li>
+            <li>
+              <strong><i class="bi bi-shuffle"></i> شبكات GAN التوليدية</strong>
+              <ul>
+                <li>StyleGAN</li>
+                <li>DeepFake Models</li>
+              </ul>
+            </li>
+            <li>
+              <strong><i class="bi bi-headphones"></i> نماذج الصوت (Audio Models)</strong>
+              <ul>
+                <li>ElevenLabs</li>
+                <li>Suno AI</li>
+                <li>Whisper</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="media">
+      <h2>الوسائط المتعددة</h2>
+
+      <article id="videos-section">
+        <h3>مقاطع الفيديو التوضيحية</h3>
+        <div class="video-container">
+          <div class="video-card">
+            <h4>الفيديو 1: مقدمة في الذكاء الاصطناعي التوليدي</h4>
+            <video id="video-1" controls>
+              <source src="/videos/Video Project 5 AI.mp4" type="video/mp4" />
+              <source src="/videos/Video Project 5 AI.mp4" type="video/webm" />
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <p>وصف الفيديو 1: شرح مفهوم الذكاء الاصطناعي التوليدي وكيف يعمل.</p>
+          </div>
+
+          <div class="video-card">
+            <h4>الفيديو 2: عرض توليد الصور بـ Runway ML</h4>
+            <video id="video-2" controls>
+              <source src="/videos/Video Project 5 tools.mp4" type="video/mp4" />
+              <source src="/videos/Video Project 5 tools.mp4" type="video/webm" />
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+            <p>وصف الفيديو 2: تجربة عملية لتوليد الصور باستخدام Runway ML.</p>
+          </div>
+
+        </div>
+      </article>
+
+      <article id="images-section">
+        <h3>معرض الصور التوضيحية</h3>
+
+        <figure>
+          <img id="img-1" src="images/ai_tools_interface.webp" alt="صورة 1: مثال على صورة مولدة بـ Midjourney" width="400" height="300" />
+          <figcaption>مثال على صورة مولدة بالذكاء الاصطناعي - Midjourney</figcaption>
+        </figure>
+
+        <figure>
+          <img id="img-2" src="images/comparison_rotate270.webp" alt="صورة 2: مقارنة بين صورة حقيقية ومولدة بالذكاء الاصطناعي" width="400" height="300" />
+          <figcaption>مقارنة بين الصورة الحقيقية والمولدة - DALL-E</figcaption>
+        </figure>
+
+        <figure>
+          <img id="img-3" src="images/runway_ml_interface.webp" alt="صورة 3: واجهة Runway ML" width="400" height="300" />
+          <figcaption>واجهة Runway ML لتوليد الفيديو</figcaption>
+        </figure>
+
+        <figure>
+          <img id="img-4" src="images/diffusion_model_diagram.webp" alt="صورة 4: مخطط نموذج الانتشار Diffusion Model" width="400" height="300" />
+          <figcaption>مخطط يوضح كيفية عمل نماذج الانتشار</figcaption>
+        </figure>
+
+        <figure>
+          <img id="img-5" src="images/elevenlabs_interface.webp" alt="صورة 5: واجهة ElevenLabs لاستنساخ الصوت" width="400" height="300" />
+          <figcaption>واجهة ElevenLabs لاستنساخ الأصوات</figcaption>
+        </figure>
+
+        <figure>
+          <img id="img-6" src="images/suno_ai_waves.webp" alt="صورة 6: مثال على موجات صوتية مولدة بـ Suno AI" width="400" height="300" />
+          <figcaption>موجات صوتية لأغنية مولدة بـ Suno AI</figcaption>
+        </figure>
+      </article>
+
+      
+    </section>
+
+    <section id="ai-text">
+      <h2>محتوى مولود بالذكاء الاصطناعي</h2>
+      
+      <article>
+        <h3>مستقبل الذكاء الاصطناعي التوليدي في الوسائط</h3>
+        <blockquote id="ai-generated-text-1">
+          [نص تم توليده بواسطة الذكاء الاصطناعي] يُشكِّل الذكاء الاصطناعي التوليدي منعطفاً تاريخياً في صناعة الإعلام والترفيه.
+          مع تطور نماذج كـ GPT-5 وSora وGemini Ultra، بات بإمكان شخص واحد إنتاج
+          محتوى وسائط متعددة يعادل جهد فريق إبداعي كامل. هذا لا يعني الاستغناء عن
+          الإنسان، بل تحريره للتركيز على الرؤية الإبداعية والتفكير الاستراتيجي،
+          بينما تتولى الآلة التنفيذ التقني. الأدوات ليست بديلاً عن الموهبة،
+          بل مضاعف لها.
+        </blockquote>
+        <p><em><i class="bi bi-robot"></i> [تم إنشاء هذا النص باستخدام الذكاء الاصطناعي - ChatGPT]</em></p>
+      </article>
+
+      <article>
+        <h3>التحديات الأخلاقية لتوليد الوسائط</h3>
+        <blockquote id="ai-generated-text-2">
+          [نص تم توليده بواسطة الذكاء الاصطناعي] تفرض تقنيات الذكاء الاصطناعي التوليدي تساؤلات أخلاقية لم تكن إجاباتها
+          واضحة من قبل: من يملك حقوق الصورة المُولَّدة؟ هل يحق استنساخ صوت شخص
+          دون إذنه؟ كيف نُمَيِّز بين الحقيقي والمُصنَّع في عالم Deepfake؟
+          تعمل المنظمات والحكومات على صياغة أطر تنظيمية تحمي الخصوصية وحقوق الملكية
+          الفكرية دون أن تعيق الابتكار. المسؤولية في النهاية تقع على المستخدم
+          الذي يجب أن يدرك حدود الاستخدام الأخلاقي لهذه الأدوات القوية.
+        </blockquote>
+        <p><em><i class="bi bi-robot"></i> [تم إنشاء هذا النص باستخدام الذكاء الاصطناعي - ChatGPT]</em></p>
+      </article>
+
+      <article>
+        <h3>نصائح للمبتدئين في استخدام أدوات الذكاء الاصطناعي التوليدي</h3>
+        <ol id="ai-tips-list">
+          <li>ابدأ بأدوات مجانية أو بفترات تجريبية قبل الاشتراك المدفوع.</li>
+          <li>تعلم فن كتابة الـ Prompts - الوصف الدقيق ينتج نتائج أفضل بكثير.</li>
+          <li>استخدم الأدوات المتخصصة لكل نوع وسائط بدلاً من أداة واحدة للكل.</li>
+          <li>احتفظ دائماً بنسخة من مدخلاتك (Prompts) لتتمكن من إعادة الإنتاج.</li>
+          <li>راجع الحقوق والشروط لكل أداة قبل نشر أي محتوى تجارياً.</li>
+          <li>لا تعتمد على المخرجات مباشرة - المراجعة والتعديل البشري ضروريان دائماً.</li>
+        </ol>
+        <p><em><i class="bi bi-robot"></i> [تم إنشاء هذه النصائح باستخدام الذكاء الاصطناعي - ChatGPT]</em></p>
+      </article>
+    </section>
+
+    <section id="references">
+      <h2>المراجع والمصادر</h2>
+      <ul>
+        <li><i class="bi bi-box-arrow-up-right"></i> <a href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney - الموقع الرسمي</a></li>
+        <li><i class="bi bi-box-arrow-up-right"></i> <a href="https://runwayml.com" target="_blank" rel="noopener">Runway ML - الموقع الرسمي</a></li>
+        <li><i class="bi bi-box-arrow-up-right"></i> <a href="https://elevenlabs.io" target="_blank" rel="noopener">ElevenLabs - الموقع الرسمي</a></li>
+        <li><i class="bi bi-box-arrow-up-right"></i> <a href="https://suno.com" target="_blank" rel="noopener">Suno AI - الموقع الرسمي</a></li>
+        <li><i class="bi bi-box-arrow-up-right"></i> <a href="https://openai.com/chatgpt" target="_blank" rel="noopener">ChatGPT - OpenAI</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>2026 - موقع الذكاء الاصطناعي التوليدي والوسائط المتعددة</p>
+    <nav>
+      <ul>
+        <li><a href="#intro">أعلى الصفحة</a></li>
+        <li><a href="#tools">الأدوات</a></li>
+        <li><a href="#media">الوسائط</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
