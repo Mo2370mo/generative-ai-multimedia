@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -21,6 +21,7 @@ header {
 #logo {
   width: 200px;
   margin-bottom: 10px;
+  max-width: 100%; /* منع خروج الشعار عن الإطار */
 }
 
 nav ul {
@@ -29,6 +30,7 @@ nav ul {
   justify-content: center;
   gap: 20px;
   margin-top: 10px;
+  flex-wrap: wrap; /* التفاف القائمة للشاشات الصغيرة */
 }
 
 nav a {
@@ -50,18 +52,22 @@ section {
 
 h1 {
   color: #0f172a;
+  font-size: 1.8rem; /* حجم مناسب */
 }
 
 h2 {
-  color: #2563eb; 
+  color: #2563eb;
+  font-size: 1.6rem;
 }
 
 h3 {
-  color: #7c3aed; 
+  color: #7c3aed;
+  font-size: 1.4rem;
 }
 
 h4 {
-  color: #3258a8; 
+  color: #3258a8;
+  font-size: 1.2rem;
 }
 
 h1, h2, h3, h4 {
@@ -73,7 +79,7 @@ article {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 ul, ol {
@@ -144,11 +150,14 @@ figure {
 img {
   border-radius: 10px;
   max-width: 100%;
+  height: auto; /* الحفاظ على الأبعاد */
 }
 
-video, audio {
+video,
+audio {
   margin-top: 10px;
   max-width: 100%;
+  height: auto; /* تحسين ظهور الفيديو */
 }
 
 blockquote {
@@ -200,24 +209,126 @@ footer a {
   text-decoration: none;
 }
 
+/* ========================================
+   التعديلات الجوهرية للشاشات المتوسطة (تابلت)
+   ======================================== */
+@media (max-width: 992px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  #diagram-lifecycle div {
+    min-width: 100px;
+    padding: 10px;
+  }
+  
+  th, td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   التعديلات الجوهرية للشاشات الصغيرة (جوال)
+   ======================================== */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    text-align: center;
   }
+
+  nav a {
+    display: inline-block;
+    padding: 6px 12px;
+  }
+
   #diagram-lifecycle {
     flex-direction: column;
     align-items: center;
   }
+
+  #diagram-lifecycle div {
+    width: 100%;
+    min-width: auto;
+  }
+
+  /* تحسين الجداول: التمرير الأفقي */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    min-width: 500px;
+  }
+  
+  th, td {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
+
+  article {
+    padding: 15px;
+  }
 }
 
-/* Enhanced Videos Section Styles */
+/* ========================================
+   تحسين خاص للشاشات الصغيرة جداً
+   ======================================== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 20px 12px;
+  }
+
+  #tools-nav button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  blockquote {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #references li {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   أقسام الفيديو المحسنة والمتجاوبة
+   ======================================== */
 #videos-section {
   text-align: center;
   background: #f8fafc;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 #videos-section h3 {
@@ -247,14 +358,14 @@ footer a {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   border: 1px solid #f0f0f0;
 }
 
 #videos-section .video-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   border-color: #e0e0e0;
 }
 
@@ -286,24 +397,52 @@ footer a {
   line-height: 1.5;
 }
 
+/* تحسين أقسام الفيديو للشاشات الصغيرة */
 @media (max-width: 768px) {
   #videos-section .video-container {
     grid-template-columns: 1fr;
     padding: 0 15px 25px;
+    gap: 20px;
   }
-  
+
   #videos-section h3 {
     font-size: 1.6rem;
     padding-top: 15px;
   }
-  
+
   #videos-section .video-card h4 {
     padding: 14px 18px 6px;
     font-size: 1rem;
   }
-  
+
   #videos-section .video-card p {
     padding: 10px 18px 18px;
     font-size: 0.9rem;
+  }
+  
+  #videos-section video {
+    max-height: 250px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  #videos-section .video-container {
+    padding: 0 10px 20px;
+  }
+  
+  #videos-section h3 {
+    font-size: 1.4rem;
+  }
+  
+  #videos-section .video-card h4 {
+    font-size: 0.9rem;
+    padding: 10px 12px 5px;
+  }
+  
+  #videos-section .video-card p {
+    font-size: 0.8rem;
+    padding: 8px 12px 15px;
   }
 }
